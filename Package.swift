@@ -8,11 +8,8 @@ let package = Package(
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "PvPorcupine",
-            targets: ["PvPorcupine"]),
-        .library(
             name: "Porcupine",
-            targets: ["Porcupine"]),
+            targets: ["PvPorcupine", "Porcupine"]),
     ],
     dependencies: [
     ],
