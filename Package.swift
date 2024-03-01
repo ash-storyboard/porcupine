@@ -15,16 +15,12 @@ let package = Package(
             targets: ["Porcupine"]),
     ],
     dependencies: [
-        .package(name: "PvPorcupine", path: "lib/ios/Package"),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
             name: "Porcupine",
-            dependencies: [
-                .product(name: "PvPorcupine", package: "PvPorcupine")
-            ],
             path: "binding/ios/Package/Sources/"
         ),
     ]
