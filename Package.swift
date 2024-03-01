@@ -4,7 +4,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "Porcupine",
+    name: "Porcupine-base",
     platforms: [
         .iOS(.v12)
     ],
@@ -21,7 +21,8 @@ let package = Package(
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
             name: "Porcupine",
-            path: "binding/ios/Package/Sources/"
+            path: "binding/ios/Package",
+            sources: ["Sources"]
         ),
     ]
 )
