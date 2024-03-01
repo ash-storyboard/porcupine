@@ -26,8 +26,8 @@ let package = Package(
         .target(
             name: "Porcupine",
             dependencies: ["PvPorcupine"],
-            path: "binding/ios/Package"
-        )
+            path: "binding/ios/Package/Sources/"
+        ),
     ]
 )
 
