@@ -5,6 +5,9 @@ import PackageDescription
 
 let package = Package(
     name: "Porcupine",
+    platforms: [
+        .iOS(.v12)
+    ],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
@@ -22,7 +25,6 @@ let package = Package(
         ),
         .target(
             name: "Porcupine",
-            dependencies: ["PvPorcupine"],
             path: "binding/ios/Package/Sources/"
         ),
     ]
